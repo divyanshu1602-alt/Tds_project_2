@@ -36,4 +36,4 @@ EXPOSE 7860
 
 # --- Run your FastAPI app ---
 # uvicorn must be in pyproject dependencies
-CMD ["uv", "run", "main.py"]
+CMD ["uv", "run", "python", "-m", "tdsproject2.main"]

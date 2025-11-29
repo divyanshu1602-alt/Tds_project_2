@@ -2,11 +2,11 @@ from fastapi import FastAPI, Request, BackgroundTasks
 from fastapi.responses import JSONResponse
 from fastapi.exceptions import HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from agent import run_agent
+from .agent import run_agent
 from dotenv import load_dotenv
 import uvicorn
 import os
-from shared_store import url_time, BASE64_STORE
+from .shared_store import url_time, BASE64_STORE
 import time
 
 load_dotenv()

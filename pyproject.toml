@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "tdsproject2"
 version = "0.1.0"
@@ -36,3 +40,9 @@ dependencies = [
     "scipy>=1.16.3",
     "haversine>=2.9.0",
 ]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

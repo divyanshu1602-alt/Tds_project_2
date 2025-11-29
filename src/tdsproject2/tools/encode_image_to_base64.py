@@ -1,4 +1,4 @@
-from shared_store import BASE64_STORE
+from ..shared_store import BASE64_STORE
 import os
 import base64, uuid
 from langchain_core.tools import tool

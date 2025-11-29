@@ -1,9 +1,9 @@
 from langgraph.graph import StateGraph, END, START
-from shared_store import url_time
+from .shared_store import url_time
 import time
 from langchain_core.rate_limiters import InMemoryRateLimiter
 from langgraph.prebuilt import ToolNode
-from tools import (
+from .tools import (
     get_rendered_html, download_file, post_request,
     run_code, add_dependencies, ocr_image_tool, transcribe_audio, encode_image_to_base64
 )
